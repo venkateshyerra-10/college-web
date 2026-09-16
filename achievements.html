@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <title>MIT</title>
+        <style>
+            *{
+                padding:0px;
+                margin:0px;
+                box-sizing:border-box;
+            }
+             header{
+                width: 100%;
+                background-color:white;
+                padding:20px 20px;
+                display:flex;
+                align-items: center;
+                padding-bottom: 3px;
+                border-radius:5px;
+                position: fixed;
+                z-index: 2000;
+                padding-top:2px;
+             }
+             .header h1{
+                color:rgb(9, 9, 135);
+                font-size: 45px;
+                display: center;
+             }
+             .header h4{
+                color:darkviolet;
+                font-size: 20px;
+                font-family:Times New Roman;
+             }
+             .header p{
+                color: rgb(9, 9, 9);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15;
+             }
+             nav{
+                display: flex;
+                gap:10px;
+               margin-left: auto; 
+               }
+             nav a{
+                text-decoration: none;
+                color: rgb(234, 94, 34);
+                font-weight: bold;
+                font-size: 16px;
+                justify-content: space-around;
+             }
+             nav a:hover{
+                color: chartreuse;
+                overflow: hidden;
+             }
+             body{
+                margin: 0px;
+                padding:0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               background-image: url(achi-bg.jpg);
+               background-attachment: fixed;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               z-index: 100;
+             }
+             .intro{
+                padding-top: 130px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             }
+              .intro h1{
+                color: rgb(255, 230, 2);
+                text-align:center;
+                font-size: 42px;
+                z-index: 1;
+              }
+              .intro marquee{
+                color:aliceblue;
+                background-color:orangered;
+              }
+              .a1 h2{
+                color: rgb(255, 230, 2);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+                padding: 20pxpx;
+                margin: 10px;
+              }
+              .a1 img{
+                    height:150px ;
+                    width: 200px;
+                   
+                    margin:15px;
+                    object-fit: cover;
+                    
+              } 
+              .a1 fieldset{ 
+                text-align: center;
+                align-items: center;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 20px;
+                border:4px solid tomato;
+                background-color:darkgrey;
+
+                width: 25%;
+                height: 500px;
+                box-sizing: border-box;
+
+                display: flex;
+                flex-direction: column;
+                padding-left: 0px;
+                padding-right: 0px;
+
+              }
+            .a1{
+                display: flex;
+                align-items: stretch;
+                text-align: center;
+                justify-content: space-around;
+                padding: 20px;
+                margin: 20px;
+                gap:20px;
+            }
+            .a1 article{
+                width: 25%;
+                text-align: center;
+                align-items: center;
+                padding: 20px;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .a1 legend{
+                color:white;
+                font-size: 25px;
+                font-weight: bold;
+                border: 5px solid rgb(234, 94, 34);
+                border-radius: 20px;
+                padding: 5px;
+                margin: 5px;
+                background-color: #0B1F3A;
+            }
+            .a1 p{
+                color:floralwhite;
+            }
+              footer{
+               background-color:#0B1F3A;
+               color: aliceblue;
+               width: 100%;
+               height:120px;
+               padding: 20px;
+               text-align: center;
+               padding-top: 20px;
+             }
+             footer h5{
+               font-size: 15px;
+             }
+             .achi::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:900px;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.648),
+                    transparent
+                );
+                background-attachment: fixed;
+             }
+             .achi>*{
+                position:relative;
+                z-index: 1;
+             }
+             .intro>*{
+                position: relative;
+                z-index: 1;
+             }
+             .logo img{
+               height:70px;
+               width:70px;
+               gap: 2px;
+             }
+        </style>
+       </head>
+   
+        <body>
+             <header>
+                <div class="logo">
+         <img src="clg-logo.png" alt="college logo">
+         </div>
+        <div class="header">
+            <h1>MIT</h1>
+            <h4>Maya institute of technology</h4>
+            <p>Empowering students through education</p>
+        </div>
+            <nav>
+                 <a href="index.html">HOME</a> |
+                 <a href="about.html">ABOUT</a> |
+                 <a href="depertment.html">DEPARTMENT</a> |
+                 <a href="achievements.html">ACHIEVEMENTS</a> |
+                 <a href="admission.html">ADMISSION</a> |
+                 <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+        <div class="intro">
+            <h1>Our Achievements</h1>
+            
+           <marquee scrollamount="10">College achievements and student success reflect an institution's commitment to quality teaching, active mentorship, and holistic growth</marquee>
+            </div>
+            <section class="achi">
+                <div class="a1">
+                <article>
+                    <fieldset>
+                        <legend>academics</legend>
+                    <h2> Academic Excellence</h2>
+                    <img src="achi-1.jpg" alt="student receiving certficate">
+                    <p>Students achieveing Excellent academic results</p>
+                    <p>year:2025-2026</p>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Sports</legend>
+                    <h2>Sport Achievements</h2>
+                    <img src="achi-2.jpg" alt="studets with trophy">
+                    <p> our college athletes frequently balance intense academic schedules with elite competitive athletics. </p>
+                    <p>event:district </p>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Technical</legend>
+                    <h2>Technical Achievements</h2>
+                    <img src="achi-3.jpg" alt="working on project">
+                    <p>Technical event achievements highlight students and institutions winning competitions, hackathons, and presenting research papers at national and international levels.</p>
+                    <p>event:Technical project hackathon</p>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Placements</legend>
+                    <h2>Placements</h2>
+                    <img src="achi-4.jpg" alt="placement">
+                    <p>100% placement Assistant</p>
+                    </fieldset>
+                </article>
+            </div>
+            </section>
+             <footer>
+                <h5>Maya institute of technology.All right are reserved</h5>
+                <p>phone:xxx xxx xxxx</p>
+                <p>email:<a href="mailto:mit71D2@gail.com">mit-mail</a></p>
+            </footer>
+        </body> 
+ </html>

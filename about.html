@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <title>MIT</title>
+        
+         <style>
+            *{
+                padding: 0px;
+                margin:0px;
+                box-sizing: border-box;
+            }
+            header{
+                width: 100%;
+                background-color:white;
+                padding:20px 20px;
+                display:flex;
+                align-items: center;
+                padding-bottom: 3px;
+                border-radius:5px;
+                position:fixed;
+                z-index: 1000;
+                padding-top:2px;
+                top: 0;
+                left: 0;
+            }   
+            .header h1{
+                color:rgb(9, 9, 135);
+                font-size: 45px;
+                display: center;
+            }
+            .header h4{
+                color:darkviolet;
+                font-size: 20px;
+                font-family:Times New Roman;
+            }
+             .header p{
+                color: rgb(9, 9, 9);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15;
+             }
+              nav{
+                display: flex;
+                gap:10px;
+               margin-left: auto; 
+               }
+             nav a{
+                text-decoration: none;
+                color: rgb(234, 94, 34);
+                font-weight: bold;
+                font-size: 16px;
+                justify-content: space-around;
+             }
+             nav a:hover{
+                color: chartreuse;
+                overflow: hidden;
+             }
+             body{
+                margin: 0px;
+                padding:0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             }
+              header div img{
+               height:70px;
+               width:70px;
+               gap: 2px;
+              }
+              .about{
+                background-image: url(clg-about.jpg);
+                height: 800px;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                position:relative;
+                background-size: cover;
+                background-position: center;
+                padding: 140px 60px 60px;
+                padding-top: 120px;
+                padding-bottom:50px;
+                position: relative;
+              }
+              .about h1{
+                text-align: center;
+                color: rgb(255, 230, 2);
+                font-size: 45px;
+                margin: 0 0 25px;
+                z-index: 1;
+              }
+              
+        
+              .about h5{
+                color:gold;
+                padding: 2px;
+                padding-top: 10px;
+                z-index: 1;
+              }
+              .vision{
+                border: 1px solid white;
+                padding: 10px;
+                margin: 10px;
+                font-size: 10;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                display: grid;
+                text-align: center;
+                width:25%;
+                margin-left: 50px;
+                z-index: 1;
+                border-radius: 20px;
+                justify-content: center;
+            }
+            .about-cont{
+                color:white;
+                font-size: 18px;
+                line-height: 1.5;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-top: 0px;
+                z-index: 1;
+                margin-left: 40px;
+                margin: 0px;
+                text-align: center;
+
+            }
+            .v1{
+                color:white;
+                padding: 10px;
+                padding-bottom: 10px;
+                z-index: 1;
+
+            }
+            .mission{
+                border: 1px solid white;
+                padding: 10px;
+                margin: 10px;
+                font-size: 10;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                display: grid;
+                text-align: center;
+                width:40%;
+                z-index: 1;
+                border-radius: 20px;
+                justify-content: center;
+            }
+            .mission ul{
+                color:white;
+                padding: 20px;
+                margin: 20px;
+                z-index: 1;
+            }
+            .moto{
+                display: flex;
+                justify-content: space-around;
+                z-index: 1;
+                padding: 40px;
+            }
+           footer{
+               background-color:#0B1F3A;
+               color: aliceblue;
+               width: 100%;
+               height:120px;
+               padding: 20px;
+               text-align: center;
+               padding-top: 20px;
+             }.about::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100%;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.648),
+                    transparent
+                );
+                background-attachment: fixed;
+
+             }
+
+         </style>
+    </head>
+    <header>
+        <div>
+            <img src="clg-logo.png" alt="college logo">
+        </div>
+        <div class="header">
+            <h1>MIT</h1>
+            <h4>Maya institute of technology</h4>
+            <p>Empowering students through education</p>
+        </div>
+            <nav>
+                 <a href="index.html">HOME</a> |
+                 <a href="about.html">ABOUT</a> |
+                 <a href="depertment.html">DEPARTMENT</a> |
+                 <a href="achievements.html">ACHIEVEMENTS</a> |
+                 <a href="admission.html">ADMISSION</a> |
+                 <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+        <body>
+         <section class="about">
+            <h1>About MIT</h1>
+            <p class="about-cont">
+               MIT is a reputed institution dedicated to providing quality education
+               and developing skilled and responsible professionals. The college
+               provides students with a supportive learning environment, experienced
+               faculty, modern laboratories, library facilities, and opportunities
+               to participate in academic and extracurricular activities. MIT
+               encourages students to develop technical knowledge, creativity,
+               communication skills, and leadership qualities to prepare them for
+                successful careers.
+         </p>
+         
+         <div class="moto">
+            <div class="vision">
+         <h5>Our Vision</h5>
+         <p class="v1">To become a leading institution that inspires innovation, develops skilled and responsible professionals, and empowers students to contribute meaningfully to society and the world.</p>
+        </div>
+           <div class="mission">
+             <h5>Our Mission</h5>
+             <p>
+               <ul>
+                 <li>To provide quality education through modern teaching methods and practical learning.</li>
+                 <li>To develop technical and professional skills that prepare students for successful careers.</li>
+                 <li>To encourage innovation, creativity, and research among students and faculty.</li>
+                 <li>To promote ethical values, leadership, and social responsibility.</li>
+              </ul>
+             </p>
+           </div>
+        </div>
+     </section>
+        </body>
+       <footer>
+      <h5>Maya institute of technology.All right are reserved</h5>
+      <p>phone:xxx xxx xxxx</p>
+      <p>email:<a href="mailto:mit71D2@gail.com">mit-mail</a></p>
+    </footer>
+        
+</html>

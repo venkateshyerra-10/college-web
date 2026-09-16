@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <title>MIT</title>
+         <style>
+             *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+             }
+             header{
+                width: 100%;
+                background-color:white;
+                padding:20px 20px;
+                display:flex;
+                align-items: center;
+                padding-bottom: 3px;
+                border-radius:5px;
+                position: fixed;
+                z-index: 2000;
+                padding-top:2px;
+             }
+             .logo img{
+               height:70px;
+               width:70px;
+               gap: 2px;
+             }
+             .header h1{
+                color:rgb(9, 9, 135);
+                font-size: 45px;
+                display: center;
+             }
+             .header h4{
+                color:darkviolet;
+                font-size: 20px;
+                font-family:Times New Roman;
+             }
+             .header p{
+                color: rgb(9, 9, 9);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15;
+             }
+             nav{
+                display: flex;
+                gap:10px;
+               margin-left: auto; 
+               }
+             nav a{
+                text-decoration: none;
+                color: rgb(234, 94, 34);
+                font-weight: bold;
+                font-size: 16px;
+                justify-content: space-around;
+             }
+             nav a:hover{
+                color: chartreuse;
+                overflow: hidden;
+             }
+             body{
+                margin: 0px;
+                padding:0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             }
+             form{
+               background-image: url(admission.jpg);
+                padding-top: 120px;
+                align-items: center;
+                color:blue;
+                border: 2px solid blue;
+                height: 700px;
+                margin: 100px;
+                padding: 30px;
+                width: 50%;
+                margin: auto;
+                margin-bottom: 40px;
+                background-color: indianred;
+
+             }
+             .in{
+               padding-top: 140px;
+               align-items: center;
+               text-align: center;
+               font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               padding: 30px;
+             }
+             label{
+               margin: 5px 10px;
+               padding: 0px 0px;
+               gap:20px;
+               color:#F4B942;
+               font-size: 17px;
+               font-weight:bolder;
+               text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+
+             }
+             input{
+               margin:5px;
+               padding: 5px;
+               width: 250px;
+             }
+             .body{
+               padding-top: 100px;
+               background-color: midnightblue;
+               height: 1000px;
+             }
+             marquee{
+               color: aliceblue;
+               background-color: chocolate;
+             }
+             .in h1{
+               color: rgb(255, 230, 2);
+               font-size: 50px;
+               font-weight: bold;
+             }
+            .in p{
+               color:aliceblue;
+               font-size: 20px;
+            }
+            .gender{
+               width: 100%;
+               text-align: left;
+            }
+            .gender-opt{
+               display:flex;
+               align-items: center;
+               justify-content: flex-start;
+               gap:5px;
+               margin: 10px;
+            }
+            .gender-opt input[type="radio"]{
+               margin: 0px;
+               width:auto
+            }
+            .gender-opt label{
+               margin: 0px;
+               padding:0px;
+            }
+            button{
+               width: 70px;
+               height: 30px;
+               cursor: pointer;
+               margin: 20px;
+            }footer{
+               background-color:#0B1F3A;
+               color: aliceblue;
+               width: 100%;
+               height:120px;
+               padding: 20px;
+               text-align: center;
+               padding-top: 20px;
+             }
+             footer h5{
+               font-size: 15px;
+             }
+            </style>
+    </head>
+    <body>
+        <header>
+         <div class="logo">
+         <img src="clg-logo.png" alt="college logo">
+         </div>
+        <div class="header">
+            <h1>MIT</h1>
+            <h4>Maya institute of technology</h4>
+            <p>Empowering students through education</p>
+        </div>
+            <nav>
+                 <a href="index.html">HOME</a> |
+                 <a href="about.html">ABOUT</a> |
+                 <a href="depertment.html">DEPARTMENT</a> |
+                 <a href="achievements.html">ACHIEVEMENTS</a> |
+                 <a href="admission.html">ADMISSION</a> |
+                 <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+        <div class="body">
+        <marquee scrollamount="10">Admissions are open now</marquee>
+        <div class="in">
+        <h1>Admissions</h1>
+        <p>Students can submit an enquiry form<p>
+        </div>
+            <form>
+                <label for="fname" >First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="first name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Lastname"><br>
+                <label for="DOB">DATE OF BIRTH:</label><br>
+                <input type="date" id="DOB" name="DOB" placeholder="DOB"><br>
+                <label class="gender">Gender</label><br>
+                <div class="gender-opt">
+                <input type="radio" id="rad" name="gender">
+                <label for="rad">male</label><br>
+                <input type="radio" id="rad" name="gender">
+                <label for="rad">Female</label><br>
+                <input type="radio" id="rad" name="gender">
+                <label for="rad">other</label><br>
+                </div>
+                <label for="email">email</label><br>
+                <input type="email" id="email" name="email" placeholder="john@gmail.com"><br>
+                <label for="tel">phone</label><br>
+                <input type="tel" id="tel" name="phone"><br>
+                <label for="qul">Qualification</label><br>
+                <select id="qul" name="qualification">
+                    <option value="intermediate/12th">intermediate/12th</option>
+                    <option value="diplomo">Diplomo</option>
+                    <option value="other">other</option>
+                </select><br>
+                <label for="per">percentage</label><br>
+                <input type="number" name="percentage" id="per"><br>
+                <label for="course">Courses</label><br>
+                <input list="course">
+                <datalist id="course">
+                    <option value="cse">coumputer science and engineering</option>
+                    <option value="ece">Electroincs and comunication engineering</option>
+                    <option value="mechanical">Mechanical engineering</option>
+                    <option value="EEE">Electrical and electronics engineering</option>
+                    <option value="civil">Civil engineering</option>
+                </datalist><br>
+                <label for="add">Address</label><br>
+                <textarea id="add" name="address" placeholder="address" cols="32"></textarea><br>
+               <button onclick="alert('your enquiry was submitted.under verification')">submit</button>
+           </form>
+           </div>
+           <footer>
+                <h5>Maya institute of technology.All right are reserved</h5>
+                <p>phone:xxx xxx xxxx</p>
+                <p>email:<a href="mailto:mit71D2@gail.com">mit-mail</a></p>
+            </footer>
+        </body> 
+</html>

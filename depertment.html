@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <title>MIT</title>
+        <style>
+             *{
+                padding: 0px;
+                margin:0px;
+                box-sizing: border-box;
+             }
+              header{
+                width: 100%;
+                background-color:white;
+                padding:20px 20px;
+                display:flex;
+                align-items: center;
+                padding-bottom: 3px;
+                border-radius:5px;
+                position:sticky;
+                z-index: 1000;
+                padding-top:2px;
+                top: 0;
+                left: 0;
+            }   
+            .header h1{
+                color:rgb(9, 9, 135);
+                font-size: 45px;
+                display: center;
+            }
+            .header h4{
+                color:darkviolet;
+                font-size: 20px;
+                font-family:Times New Roman;
+            }
+             .header p{
+                color: rgb(9, 9, 9);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15;
+             }
+              nav{
+                display: flex;
+                gap:10px;
+               margin-left: auto; 
+               }
+             nav a{
+                text-decoration: none;
+                color: rgb(234, 94, 34);
+                font-weight: bold;
+                font-size: 16px;
+                justify-content: space-around;
+             }
+             nav a:hover{
+                color: chartreuse;
+                overflow: hidden;
+             }
+             body{
+                margin: 0px;
+                padding:0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             }
+              header div img{
+               height:70px;
+               width:70px;
+               gap: 2px;
+              }
+              .dept{
+                background-image: url(dept.png);
+                padding-top: 120px;
+                width: 100%;
+                height: 2650px;
+                background-size: cover ;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 2;
+              }
+              .dept h1{
+                color: rgba(255, 230, 2);
+                align-items: center;
+                text-align: center;
+                font-size: 45px;
+                margin: 0 0 25px;
+                z-index: 2;
+              }
+              .dept p{
+                color:aliceblue;
+                text-align: center;
+                font-size: 18px;
+                margin: 20x;
+                padding: 20px;
+                z-index: 100;
+              }
+              .hero h2{
+                color: rgb(255, 235, 2);
+                text-align: center;
+                padding: 20px;
+                margin:20px;
+                z-index: 1;
+              }
+             article{
+               border: 1px solid white;
+               margin: 20px;
+               padding: 0px;
+               font-size: 25px;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               border-radius: 10px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 10;
+               width: 50%;
+               margin-left:40px ;
+               z-index: 1;
+              }
+              article img{
+                height: 300px;
+                width: 300px;
+                align-items: center;
+                margin: auto;
+                z-index: 1;
+
+              }
+              article ul li{
+                color: goldenrod;
+                padding-bottom: 10px;
+                z-index:1;
+              }
+              .hero{
+                display: flex;
+                flex-direction: column;
+                margin-right: 30px;
+                justify-content: space-around;
+                z-index: 2;
+              }
+              .cs-ce{
+                display: flex;
+                gap: 20px;
+                z-index: 2;
+                
+              }
+              .me-ee{
+                display: flex;
+                gap:20px;
+                z-index: 2;
+              }
+              .civil{
+                place-items: center;
+                justify-content: center;
+                margin: auto;
+                z-index: 2;
+             }
+             article h5{
+                color: orangered;
+                padding: 7px;
+                z-index: 2;
+                
+             }
+             .dept::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:2650px;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.648),
+                    transparent
+                );
+                background-attachment: fixed;
+             }
+             .dept>*{
+                position:relative;
+                z-index: 1;
+             }
+
+        </style>
+    </head>
+    
+    <body>
+        <header>
+         <div>
+            <img src="clg-logo.png" alt="college logo">
+        </div>
+        <div class="header">
+            <h1>MIT</h1>
+            <h4>Maya institute of technology</h4>
+            <p>Empowering students through education</p>
+        </div>
+            <nav>
+                 <a href="index.html">HOME</a> |
+                 <a href="about.html">ABOUT</a> |
+                 <a href="depertment.html">DEPARTMENT</a> |
+                 <a href="achievements.html">ACHIEVEMENTS</a> |
+                 <a href="admission.html">ADMISSION</a> |
+                 <a href="contact.html">CONTACT</a>
+            </nav>
+    </header>
+        <main class="dept">
+            <h1>Depertment of MIT</h1>
+            <p>Our college offers various departments that provide students with opportunities to develop technical knowledge, practical skills, and professional abilities.</p>
+            <section class="hero">
+                <h2>Our Depertments</h2>
+                <div class="cs-ce">
+                <article>
+                    <h2>coumputer science and engineering(CSE)</h2>
+                    <img src="cse.jpg" alt="cse">
+                    <p>The Computer Science and Engineering department focuses on
+                       programming, software development, web technologies and
+                       emerging areas of computer science.
+                    </p>
+                    <h5>key area</h5>
+                    <ul>
+                        <li>programming</li>
+                        <li>web development</li>
+                        <li>artificial intelligence</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Electronics and communication engineering(ECE)</h2>
+                    <img src="ece.jpg" alt="ece">
+                    <p>In a Bachelor of Technology (B.Tech) program, ECE stands for Electronics and Communication Engineering. It is one of the most versatile, high-demand disciplines because it bridges the gap between hardware electronics and software communication networks</p>
+                    <h5>Key areas</h5>
+                        <ul>
+                            <li>communication</li>
+                            <li>Electronics</li>
+                            <li>Embeded system</li>
+                        </ul>
+                </article>
+                </div>
+                <div class="me-ee">
+                 <article>
+                    <h2>Mechanical Engineering</h2>
+                    <img src="mechanical.jpg" alt="mech">
+                    <p>Mechanical engineering is a core discipline focused on designing and building physical machines, tools, and thermal systems, while MECh Engineers is a prominent industrial company specializing in heavy process equipment</p>
+                    <h5>Key areas</h5>
+                        <ul>
+                            <li>machines</li>
+                            <li>Manufacturing</li>
+                            <li>design</li>
+                        </ul>
+                </article>
+                 <article>
+                    <h2>Electrical and Electronics Engineering(EEE)</h2>
+                    <img src="eee.jpg" alt="eee">
+                    <p>EEE stands for Electrical and Electronics Engineering, a core academic discipline that combines heavy electrical power systems with modern electronic devices</p>
+                    <h5>Key areas</h5>
+                        <ul>
+                            <li>Electrical systems</li>
+                            <li>Electronics</li>
+                            <li>Circuits</li>
+                        </ul>
+                </article>
+                </div>
+                <article class="civil">
+                    <h2>Civil Engineering</h2>
+                    <img src="civil.jpg" alt="civil">
+                    <p>Civil engineering is the professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works like roads, bridges, canals, dams, and buildings.</p>
+                    <h5>Key areas</h5>
+                        <ul>
+                            <li>Structure design</li>
+                            <li>Construction</li>
+                            <li>Buildings</li>
+                        </ul>
+                </article>
+                
+
+            </section>
+        </main>
+    </body>
+</html>
