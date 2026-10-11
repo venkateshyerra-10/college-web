@@ -1,0 +1,843 @@
+ *{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+header{
+        width: 100%;
+        background-color:white;
+        padding:20px 20px;
+        display:flex;
+        align-items: center;
+        padding-bottom: 3px;
+        border-radius:5px;
+        position: fixed;
+        z-index: 2000;
+        padding-top:2px;
+          }
+ .header h1{
+            color:rgb(9, 9, 135);
+            font-size: 45px;
+            display: center;
+          }
+ .header h4{
+            color:darkviolet;
+            font-size: 20px;
+            font-family:Times New Roman;
+           }
+.header p{
+          color: rgb(9, 9, 9);
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 15;
+        }
+ nav{
+    display: flex;
+    gap:10px;
+    margin-left: auto; 
+   }
+ nav a{
+       text-decoration: none;
+       color: rgb(234, 94, 34);
+       font-weight: bold;
+       font-size: 16px;
+       justify-content: space-around;
+      }
+ nav a:hover{
+            color: chartreuse;
+            overflow: hidden;
+            }
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.intro{
+    background-image: url(mycollege.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    position:relative;
+    background-size: cover;  
+    }
+.intro::before{
+             content: "";
+             position:absolute;
+             left:0;
+             top:0;
+             width:60%;
+             height:100%;
+             background: linear-gradient(
+                to right,
+                 rgba(0, 0, 0, 0.971),
+                 rgba(0, 0, 0, 0.619),
+                 transparent
+                );
+             }
+.intro-content{
+            padding: 50px;
+            color: aliceblue;
+            z-index: 10;
+            width: 50%;
+             }
+.intro-content h5{
+               color: bisque;
+               font-size: 20px;
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             }
+.intro-content h2{
+               color: gold;
+               font-size: 50px;
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               font-weight: 100%;
+               padding-left:20px
+             }
+.p{
+  font-size: 25px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:white;
+  padding-left: 20px;
+   }
+.intro-content h3{
+               font-size: 20px;
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               color: aqua;
+               padding-left: 20px;
+             }
+.about{
+       font-size: 10;
+       font-family: Arial, Helvetica, sans-serif;
+       color:floralwhite;
+       padding-left: 20px;
+       opacity: 80%;
+       margin: 5px;
+       padding:5px;
+       z-index: 2;
+      }
+.btn{
+   display: inline-block;
+   padding: 10px 20px;
+   margin-right: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   border:2px solid white;
+   border-radius: 4px;
+   cursor:pointer;
+   border-radius: 5px;
+   border: none;
+   }
+.About{
+      color:rgb(255, 85, 34);
+      background-color: aliceblue;
+        }
+.About:hover{
+           background-color: yellow;
+           opacity: 0.7s;
+           color:rgb(241, 13, 32);
+           }
+footer{
+     background-color:#0B1F3A;
+     color: aliceblue;
+     width: 100%;
+     height:120px;
+     padding: 20px;
+     text-align: center;
+     padding-top: 20px;
+     z-index: 100;
+     }
+footer h5{
+       font-size: 15px;
+        }
+.logo img{
+       height:70px;
+       width:70px;
+       gap: 2px;
+}
+/* about.html page css */
+  .about1{
+        background-image: url(clg-about.jpg);
+        height: 800px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        position:relative;
+        background-size: cover;
+        background-position: center;
+        padding: 140px 60px 60px;
+        padding-top: 120px;
+        padding-bottom:50px;
+        position: relative;
+        z-index: 1000;
+      }
+.about1 h1{
+          text-align: center;
+          color: rgb(255, 230, 2);
+          font-size: 45px;
+          margin: 0 0 25px;
+          z-index: 1;
+         }
+.about1 h5{
+           color:gold;
+           padding: 2px;
+           padding-top: 10px;
+           z-index: 1;
+         }
+.vision{
+      border: 1px solid white;
+      padding: 10px;
+      margin: 10px;
+      font-size: 10;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: grid;
+      text-align: center;
+      width:25%;
+      margin-left: 50px;
+      z-index: 1;
+      border-radius: 20px;
+      justify-content: center;
+      }
+.about-cont{
+          color:white;
+          font-size: 18px;
+          line-height: 1.5;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          margin-top: 0px;
+          z-index: 1;
+          margin-left: 40px;
+          margin: 0px;
+          text-align: center;
+           }
+.v1{
+    color:white;
+    padding: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+  }
+ .mission{
+        border: 1px solid white;
+        padding: 10px;
+        margin: 10px;
+        font-size: 10;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: grid;
+        text-align: center;
+        width:40%;
+        z-index: 1;
+        border-radius: 20px;
+        justify-content: center;
+        }
+.mission ul{
+           color:white;
+           padding: 20px;
+           margin: 20px;
+           z-index: 1;
+            }
+            .moto{
+                display: flex;
+                justify-content: space-around;
+                z-index: 1;
+                padding: 40px;
+            }
+            .about1::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100%;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.728),
+                    rgba(0, 0, 0, 0.799),
+                    transparent
+                );
+                background-attachment: fixed;
+             }
+/* department.html css */
+ .dept{
+                background-image: url(dept.png);
+                padding-top: 120px;
+                width: 100%;
+                height: 2700px;
+                background-size: cover ;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 2;
+              }
+              .dept h1{
+                color: rgba(255, 230, 2);
+                align-items: center;
+                text-align: center;
+                font-size: 45px;
+                margin: 0 0 25px;
+                z-index: 2;
+              }
+              .dept p{
+                color:aliceblue;
+                text-align: center;
+                font-size: 18px;
+                margin: 20x;
+                padding: 20px;
+                z-index: 100;
+              }
+              .hero h2{
+                color: rgb(255, 235, 2);
+                text-align: center;
+                padding: 20px;
+                margin:20px;
+                z-index: 1;
+              }
+             article{
+               border: 1px solid white;
+               margin: 20px;
+               padding: 0px;
+               font-size: 25px;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               border-radius: 10px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 10;
+               width: 50%;
+               margin-left:40px ;
+               z-index: 1;
+              }
+              article img{
+                height: 300px;
+                width: 300px;
+                align-items: center;
+                margin: auto;
+                z-index: 1;
+
+              }
+              article ul li{
+                color: goldenrod;
+                padding-bottom: 10px;
+                z-index:1;
+              }
+              .hero{
+                display: flex;
+                flex-direction: column;
+                margin-right: 30px;
+                justify-content: space-around;
+                z-index: 2;
+              }
+              .cs-ce{
+                display: flex;
+                gap: 20px;
+                z-index: 2;
+                
+              }
+              .me-ee{
+                display: flex;
+                gap:20px;
+                z-index: 2;
+              }
+              .civil{
+                place-items: center;
+                justify-content: center;
+                margin: auto;
+                z-index: 2;
+             }
+             article h5{
+                color: orangered;
+                padding: 7px;
+                z-index: 2;
+                
+             }
+             .dept::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100%;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.648),
+                    transparent
+                );
+                background-attachment: fixed;
+             }
+             .dept>*{
+                position:relative;
+                z-index: 1;
+             }
+/* achievements.html css */
+.intro1{
+                padding-top: 130px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                position:sticky;
+                z-index: 100;
+             }
+              .intro1 h1{
+                color: rgb(255, 230, 2);
+                text-align:center;
+                font-size: 42px;
+                z-index: 1;
+              }
+              .intro1 marquee{
+                color:aliceblue;
+                background-color:orangered;
+                margin-top: 20px;
+              }
+              .a1 h2{
+                color: rgb(255, 230, 2);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+                padding: 20pxpx;
+                margin: 10px;
+              }
+              .a1 img{
+                    height:150px ;
+                    width: 200px;
+                   
+                    margin:15px;
+                    object-fit: cover;
+                    
+              } 
+              .a1 fieldset{ 
+                text-align: center;
+                align-items: center;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 20px;
+                border:4px solid tomato;
+                background-color:darkgrey;
+
+                width: 25%;
+                height: 500px;
+                box-sizing: border-box;
+
+                display: flex;
+                flex-direction: column;
+                padding-left: 0px;
+                padding-right: 0px;
+                
+
+              }
+            .a1{
+                display: flex;
+                align-items: stretch;
+                text-align: center;
+                justify-content: space-around;
+                padding: 20px;
+                margin: 20px;
+                gap:20px;
+            }
+            .a1 .art{
+                width: 25%;
+                text-align: center;
+                align-items: center;
+                padding: 20px;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                border: none;
+            }
+            .a1 legend{
+                color:white;
+                font-size: 25px;
+                font-weight: bold;
+                border: 5px solid rgb(234, 94, 34);
+                border-radius: 20px;
+                padding: 5px;
+                margin: 5px;
+                background-color: #0B1F3A;
+            }
+            .a1 p{
+                color:floralwhite;
+                font-size: 17px;
+                font-weight:400;
+            }
+             .achi::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:900px;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.648),
+                    transparent
+                );
+                background-attachment: fixed;
+             }
+             .achi>*{
+                position:relative;
+                z-index: 1;
+             }
+             .intro1>*{
+                position: relative;
+                z-index: 1;
+             }
+             .ab{
+               background-image: url(achi-bg.jpg);
+               background-attachment: fixed;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               z-index: 100;
+               height: 900px;
+}
+/*admission.html*/
+form{
+                padding-top: 120px;
+                color:blue;
+                height: 690px;
+                margin: 100px;
+                padding: 30px;
+                width:970px;
+                margin: auto;
+                margin-bottom: 40px;
+                border-radius: 20px;
+                background-color: rgb(255, 255, 255);
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                 column-gap: 20px;
+                box-shadow: 0px 0px 10px 3px black;
+                justify-content: center;
+                
+             }
+             .in{
+               padding-top: 140px;
+               align-items: center;
+               text-align: center;
+               font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               padding: 30px;
+             }
+             label{
+               margin: 5px 10px;
+               padding-bottom: 0px;
+               gap:20px;
+               color:#0B1F3A;
+               font-size: 17px;
+               font-weight:bolder;
+               text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+               text-shadow: none;
+
+             }
+             textarea{
+              margin: 5px;
+              padding:7px;
+              width:400px;
+              background: #FFFFFF;
+             }
+             input ,select{
+               margin:5px;
+               padding: 7px;
+               width: 400px;
+               background: #FFFFFF;
+               border: 1px solid #B8C4D1;
+               margin-bottom: 15px;
+             }
+             .body{
+               padding-top: 50px;
+               background-image: url(adMIT-bg.png);
+               height: 880px;
+               background-position: center;
+               background-size: cover;
+               background-repeat: no-repeat;
+               position:relative;
+               
+                            
+               z-index: 0;
+             }
+            .body::before{
+              content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                min-height:100%;
+                background: linear-gradient(
+                    rgba(255, 255, 255, 0.502),
+                    rgba(255, 255, 255, 0.559),
+                    transparent
+                );
+                z-index: -1;
+             }
+            
+             marquee{
+               color: aliceblue;
+               background-color: chocolate;
+               margin-top: 100px; 
+               z-index: 1000;
+             }
+             .in{
+              background-image: url(admission.jpg);
+              padding-top: 130px;
+              height: 550px;
+              width: 100%;
+               background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position:relative;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                z-index: 0;
+             }
+              .in::before{
+                content: "";
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:700px;
+                background: linear-gradient(
+
+                    rgba(0, 0, 0, 0.712),
+                    rgba(0, 0, 0, 0.806),
+                    transparent
+                );
+               
+                
+             }
+             .in h1{
+               color: rgb(255, 230, 2);
+               font-size: 70px;
+               font-weight: bold;
+               z-index: 2;
+               position: relative;
+             }
+            .in p{
+               color:rgb(9, 43, 235);
+               font-size: 20px;
+               z-index: 2;
+               position:relative;
+            }
+            .gender{
+               width: 100%;
+               text-align: left;
+            }
+            .gender-opt{
+               display:flex;
+               align-items: center;
+               justify-content: flex-start;
+               gap:5px;
+               margin: 10px;
+            }
+            .gender-opt input[type="radio"]{
+               margin: 0px;
+               width:auto
+            }
+            .gender-opt label{
+               margin: 0px;
+               padding:0px;
+            }
+            button{
+               width: 200px;
+               height: 35px;
+               cursor: pointer;
+               margin: 20px;
+               color:blue;
+               background-color:gold;
+               box-shadow: none;
+               display: flex;
+               align-items: center;
+               text-align: center;
+               justify-content: center;
+               margin: auto;  
+               grid-column-start: 1;
+               grid-column-end: 4;    
+               padding: 20px;
+               margin-top: 10px;
+               font-size: 15px;
+               font-weight: bold;
+               border-radius: 15px;
+            }
+            button:hover{
+              background-color: #0B1F3A;
+              color:aliceblue;
+              opacity: 1s;
+            }
+            .adv {
+              display: flex;
+              gap:20px;
+              font-size: 20px;
+              padding: 10px;
+              z-index: 10;
+            }
+            .adv :hover{
+              color:#F4B942;
+              
+            }
+            .h2{
+              text-align:center;
+              color:#0B1F3A;
+              padding: 10px;
+              font-size: 35px;
+              z-index: 10;
+              padding-bottom: 0px;
+}
+.body p{
+  padding: 20px;
+  padding-top: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+.PD{
+  padding: 10px;
+  border: 1px solid rgb(189, 186, 186);
+  height: fit-content;
+  margin-top:10px;
+  padding-top: 20px;
+  padding-bottom: 190px;
+  box-shadow:1px 1px 7px 1px gray;
+  border-radius: 20px;
+margin-left: 30px;
+
+}
+.CE{
+  padding: 10px;
+  border: 1px solid rgb(189, 186, 186);
+  margin: 10px;
+  padding: 20px;
+  box-shadow:1px 1px 7px 1px gray;
+  border-radius: 20px;
+  height: fit-content;
+  padding-bottom: 30px;
+}
+form h4{
+  padding: 15px;
+  margin:10px;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:darkblue;
+  background-color: rgba(250, 250, 210, 0.758);
+  border-radius: 10px;
+}
+/* contact.html css */
+.hero-cont{
+  background-image: url(mycollege.png);
+  padding-top: 130px;
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.hero-cont::before{
+      content: "";
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      background: linear-gradient(
+       rgba(0, 0, 0, 0.813),
+       rgba(0, 0, 0, 0.783),
+      transparent
+      );
+      background-attachment: fixed;
+                
+}
+main{
+   padding-top: 110px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+main h1{
+    color:  rgb(255, 230, 2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 60px;
+    font-weight:500;
+    z-index: 10;
+    }
+.p{
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size:20px;
+  padding: 30px;
+  z-index: 10;
+ }
+ .s1 h3{
+      color:rgb(255, 230, 2);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 30px;
+      align-items: center;
+      text-align: center;
+    }
+ .s1 p{
+    color:rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+  }
+.s1 h5{
+    color:rgb(255, 230, 2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+
+}
+.s1{
+  border:2px solid black;
+  padding:40px;
+  margin:20px;
+  width:800px;
+  background-color:darkgray;
+  box-shadow: 0px 0px 10px 3px black;
+  border-radius: 50px;
+}
+.s2{
+  border:2px solid black;
+  padding:20px;
+  margin:20px;
+  width:400px;
+  background-color: darkgray;
+  box-shadow: 0px 0px 10px 3px black;
+  border-radius: 50px;
+}
+.cont{
+  background-image: url(contbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+}
+.d{
+  display: flex;
+  gap:0px;
+  width:fit-content;
+  align-content: center;
+  margin: auto;
+  padding: 10px;
+}
+.h2{
+  color:darkorange;
+  padding: 10px;
+  margin:10px;
+}
+.s2 h3{
+    color:rgb(255, 230, 2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    }
+.s2 p{
+    color:rgb(11, 11, 11);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+  }
